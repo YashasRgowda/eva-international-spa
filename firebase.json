@@ -15,11 +15,21 @@
     "headers": [
       {
         "source": "**/*.@(css|js)",
-        "headers": [{ "key": "Cache-Control", "value": "public, max-age=3600" }]
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=3600"
+          }
+        ]
       },
       {
         "source": "**/*.@(webp|jpg|jpeg|png|svg)",
-        "headers": [{ "key": "Cache-Control", "value": "public, max-age=2592000" }]
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=2592000"
+          }
+        ]
       }
     ]
   },
