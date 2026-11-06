@@ -1,0 +1,637 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>EVA International Spa — Luxury Spa &amp; Massage in Koramangala, Bengaluru</title>
+  <meta name="description" content="EVA International Spa is a luxury spa in Koramangala, Bengaluru. Thai, Balinese, Swedish, Deep Tissue and Couples massages by certified therapists, in private rooms. Open every day, 9 AM to 10 PM.">
+  <meta name="theme-color" content="#1d1612">
+  <meta property="og:title" content="EVA International Spa — Koramangala, Bengaluru">
+  <meta property="og:description" content="Luxury massages by certified therapists, in private rooms. Open every day, 9 AM to 10 PM.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1761470575018-135c213340eb?auto=format&fit=crop&w=1200&q=80">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Hanken+Grotesk:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1761470575018-135c213340eb?auto=format&fit=crop&w=2400&q=80" imagesrcset="https://images.unsplash.com/photo-1761470575018-135c213340eb?auto=format&fit=crop&w=1200&q=80 1200w, https://images.unsplash.com/photo-1761470575018-135c213340eb?auto=format&fit=crop&w=1800&q=80 1800w, https://images.unsplash.com/photo-1761470575018-135c213340eb?auto=format&fit=crop&w=2400&q=80 2400w" imagesizes="100vw" fetchpriority="high">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Opening curtain: plays once per visit, tap to skip -->
+  <div class="intro" id="intro" aria-hidden="true">
+    <div class="intro__inner">
+      <svg class="intro__mark"><use href="#lotus"/></svg>
+      <span class="intro__word">EVA</span>
+      <span class="intro__sub">International Spa</span>
+    </div>
+  </div>
+
+  <!-- Placeholder lotus mark, reused by the logo. Replace when the final logo is ready. -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="lotus" viewBox="0 0 200 140">
+      <g fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+        <path pathLength="1" d="M100 18 C116 44 119 80 100 110 C81 80 84 44 100 18 Z"/>
+        <path pathLength="1" d="M100 110 C121 86 140 62 163 52 C160 81 136 103 100 110 Z"/>
+        <path pathLength="1" d="M100 110 C79 86 60 62 37 52 C40 81 64 103 100 110 Z"/>
+        <path pathLength="1" d="M100 110 C136 106 170 92 194 78 C179 101 141 115 100 110 Z"/>
+        <path pathLength="1" d="M100 110 C64 106 30 92 6 78 C21 101 59 115 100 110 Z"/>
+        <path pathLength="1" d="M58 124 C84 131 116 131 142 124"/>
+      </g>
+    </symbol>
+    <symbol id="phone" viewBox="0 0 24 24">
+      <path d="M6.7 3.5h2.5l1.5 3.7-1.9 1.3a11.5 11.5 0 0 0 6.7 6.7l1.3-1.9 3.7 1.5v2.5a2 2 0 0 1-2.2 2A16.6 16.6 0 0 1 4.7 5.7a2 2 0 0 1 2-2.2z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="whatsapp" viewBox="0 0 24 24">
+      <path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+      <path d="M9.1 7.9c.2-.4.4-.4.7-.4h.5c.2 0 .4.1.5.3l.7 1.7c.1.2 0 .4-.1.6l-.5.6c-.1.1-.1.3 0 .5.6 1 1.4 1.8 2.4 2.3.2.1.4.1.5-.1l.6-.7c.1-.2.4-.2.6-.1l1.6.8c.2.1.3.3.3.5 0 .7-.4 1.4-1 1.7-.6.3-1.3.3-2 .1-2.6-.8-4.6-2.8-5.4-5.4-.2-.8-.2-1.6.1-2.4z" fill="currentColor"/>
+    </symbol>
+  </svg>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <div class="header__left">
+      <button class="menu-toggle" id="menuOpen" aria-label="Open menu" aria-expanded="false">
+        <span class="menu-toggle__icon"><i></i><i></i></span>
+        <span class="menu-toggle__label">Menu</span>
+      </button>
+    </div>
+    <a href="#top" class="header__brand" aria-label="EVA International Spa — back to top">
+      <svg class="header__mark"><use href="#lotus"/></svg>
+      <span class="header__word">EVA</span>
+    </a>
+    <div class="header__right">
+      <a href="tel:+918884666184" class="header__call">Call +91 88846 66184</a>
+      <a href="tel:+918884666184" class="header__phone" aria-label="Call EVA on +91 88846 66184"><svg aria-hidden="true"><use href="#phone"/></svg></a>
+      <button class="btn header__reserve" data-reserve>Book Now</button>
+    </div>
+  </header>
+
+  <!-- ============ MENU OVERLAY ============ -->
+  <div class="menu" id="menu" aria-hidden="true">
+    <div class="menu__inner">
+      <div class="menu__top">
+        <button class="menu-toggle menu-toggle--close" id="menuClose" aria-label="Close menu">
+          <span class="menu-toggle__icon"><i></i><i></i></span>
+          <span class="menu-toggle__label">Close</span>
+        </button>
+        <button class="btn menu__reserve" data-reserve>Book Now</button>
+      </div>
+
+      <nav class="menu__nav" aria-label="Main">
+        <a href="#rituals" data-scene="massages"><span>01</span>Massages</a>
+        <a href="#rooms" data-scene="rooms"><span>02</span>Our Rooms</a>
+        <a href="#two" data-scene="couples"><span>03</span>Couples</a>
+        <a href="#reviews" data-scene="reviews"><span>04</span>Reviews</a>
+        <a href="#visit" data-scene="contact"><span>05</span>Contact</a>
+      </nav>
+
+      <div class="menu__actions">
+        <button class="btn menu__book" data-reserve>Book Now</button>
+        <div class="menu__quick">
+          <a href="tel:+918884666184"><svg aria-hidden="true"><use href="#phone"/></svg>Call</a>
+          <a href="https://wa.me/918884666184?text=Hello%20EVA%2C%20I%20would%20like%20to%20book%20a%20massage." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#whatsapp"/></svg>WhatsApp</a>
+        </div>
+        <p class="menu__hours">Open every day &nbsp;·&nbsp; 9 AM — 10 PM</p>
+      </div>
+
+      <div class="menu__foot">
+        <div>
+          <p class="menu__label">Reservations</p>
+          <a href="tel:+918884666184">+91 88846 66184</a>
+          <a href="https://wa.me/918884666184?text=Hello%20EVA%2C%20I%20have%20a%20question." target="_blank" rel="noopener">WhatsApp us</a>
+        </div>
+        <div>
+          <p class="menu__label">Open every day</p>
+          <p>9 AM — 10 PM</p>
+          <p>Koramangala, Bengaluru</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right panel: a line-drawn lotus, then a coloured scene for each link on hover -->
+    <div class="menu__art" aria-hidden="true">
+      <svg class="menu__lotus" viewBox="0 0 200 140">
+        <path pathLength="1" d="M100 18 C116 44 119 80 100 110 C81 80 84 44 100 18 Z"/>
+        <path pathLength="1" d="M100 110 C121 86 140 62 163 52 C160 81 136 103 100 110 Z"/>
+        <path pathLength="1" d="M100 110 C79 86 60 62 37 52 C40 81 64 103 100 110 Z"/>
+        <path pathLength="1" d="M100 110 C136 106 170 92 194 78 C179 101 141 115 100 110 Z"/>
+        <path pathLength="1" d="M100 110 C64 106 30 92 6 78 C21 101 59 115 100 110 Z"/>
+        <path pathLength="1" d="M58 124 C84 131 116 131 142 124"/>
+      </svg>
+
+      <div class="scene scene--bars" data-scene="massages" data-color="#8b7355" data-img="https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=1400&q=80">
+        <span class="piece"></span><span class="piece"></span><span class="piece"></span><span class="piece"></span>
+        <span class="piece"></span><span class="piece"></span><span class="piece"></span><span class="piece"></span>
+      </div>
+      <div class="scene scene--arch" data-scene="rooms" data-color="#bfa78a" data-img="assets/images/hero.webp">
+        <span class="scene__line"></span><span class="piece"></span>
+      </div>
+      <div class="scene scene--pair" data-scene="couples" data-color="#ad6e58" data-img="https://images.unsplash.com/photo-1720118509152-2df877673bee?auto=format&fit=crop&w=1400&q=80">
+        <span class="scene__line"></span><span class="scene__line"></span><span class="piece"></span><span class="piece"></span>
+      </div>
+      <div class="scene scene--ring" data-scene="reviews" data-color="#e1b54c" data-img="https://images.unsplash.com/photo-1601479604588-68d9e6d386b5?auto=format&fit=crop&w=1400&q=80">
+        <span class="piece"></span><span class="piece piece--solid"></span><span class="piece"></span>
+      </div>
+      <div class="scene scene--bands" data-scene="contact" data-color="#5f6e5b" data-img="https://images.unsplash.com/photo-1648065611455-6774225ef654?auto=format&fit=crop&w=1400&q=80">
+        <span class="piece"></span><span class="piece"></span><span class="piece"></span><span class="piece"></span><span class="piece"></span>
+      </div>
+    </div>
+  </div>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="hero__media">
+        <div class="hero__frame">
+          <img
+            src="https://images.unsplash.com/photo-1761470575018-135c213340eb?auto=format&fit=crop&w=2400&q=80"
+            srcset="https://images.unsplash.com/photo-1761470575018-135c213340eb?auto=format&fit=crop&w=1200&q=80 1200w,
+                    https://images.unsplash.com/photo-1761470575018-135c213340eb?auto=format&fit=crop&w=1800&q=80 1800w,
+                    https://images.unsplash.com/photo-1761470575018-135c213340eb?auto=format&fit=crop&w=2400&q=80 2400w"
+            sizes="100vw"
+            alt="A calm, softly lit spa room with a glowing salt crystal in the centre"
+            fetchpriority="high">
+        </div>
+      </div>
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="hero__shade" aria-hidden="true"></div>
+      <div class="hero__grain" aria-hidden="true"></div>
+
+      <div class="hero__logo">
+        <svg class="hero__mark"><use href="#lotus"/></svg>
+        <span class="hero__word">EVA</span>
+        <span class="hero__sub">International Spa</span>
+      </div>
+
+      <div class="hero__content">
+        <p class="hero__kicker"><span>Luxury Spa</span><i></i><span>Koramangala, Bengaluru</span></p>
+        <h1 class="hero__title">
+          <span class="line"><span>Relax. Unwind. <em>Feel New.</em></span></span>
+        </h1>
+        <p class="hero__lead">Professional massages by certified therapists, in private rooms made just for you.</p>
+
+        <form class="booking" id="heroBooking" autocomplete="off">
+          <label class="booking__field">
+            <span class="booking__label">Massage</span>
+            <select name="ritual">
+              <option value="" selected disabled>Choose a massage</option>
+              <option>Deep Tissue Massage</option>
+              <option>Swedish Massage</option>
+              <option>Thai Massage</option>
+              <option>Aromatherapy Massage</option>
+              <option>Balinese Massage</option>
+              <option>Body Scrub</option>
+              <option>Couples Spa</option>
+              <option>Jacuzzi</option>
+              <option>Not sure, please suggest</option>
+            </select>
+          </label>
+          <span class="booking__divider"></span>
+          <label class="booking__field">
+            <span class="booking__label">Day</span>
+            <select name="day" id="heroDay">
+              <option value="" selected disabled>Choose a day</option>
+            </select>
+          </label>
+          <button class="booking__btn" type="submit">
+            <span>Book Now</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M14 7l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
+          </button>
+        </form>
+        <p class="hero__help">or call <a href="tel:+918884666184">+91 88846 66184</a></p>
+      </div>
+
+      <p class="hero__corner hero__corner--left"><span class="hero__star" aria-hidden="true">★</span> 4.9 rating on Google</p>
+      <p class="hero__corner hero__corner--right">Open every day &nbsp;·&nbsp; 9 AM — 10 PM</p>
+    </section>
+
+    <!-- ============ WELCOME / ROOMS ============ -->
+    <section class="world" id="rooms">
+      <div class="world__head container-narrow">
+        <p class="kicker" data-reveal>Welcome to EVA</p>
+        <h2 class="title" data-reveal>A Calm Escape in <br>the Heart of the City</h2>
+        <p class="body" data-reveal>EVA International Spa is a luxury spa in Koramangala, Bengaluru. The moment you walk in, the noise of the city fades away. Soft lighting, clean private rooms and trained therapists help you fully relax.</p>
+        <p class="body" data-reveal>Take a look inside.</p>
+      </div>
+
+      <div class="showcase container" data-reveal>
+        <div class="showcase__stage">
+          <img class="showcase__img is-active" src="assets/images/hero.webp" alt="Signature massage room">
+          <img class="showcase__img" data-src="https://images.unsplash.com/photo-1749766878223-6ceae855b28b?auto=format&fit=crop&w=1800&q=80" alt="Private shower">
+          <img class="showcase__img" data-src="https://images.unsplash.com/photo-1604478578618-57d582bfb230?auto=format&fit=crop&w=1800&q=80" alt="Relaxing bath">
+          <img class="showcase__img" data-src="https://images.unsplash.com/photo-1765745520336-88acf0b84fe4?auto=format&fit=crop&w=1800&q=80" alt="Changing lounge">
+          <p class="showcase__count" aria-hidden="true"><span id="showCount">01</span> / 04</p>
+          <button class="btn btn--light showcase__cta" data-reserve>Book Now</button>
+        </div>
+        <div class="showcase__bar">
+          <div class="showcase__caption">
+            <p class="showcase__eyebrow" id="showEyebrow">Our most loved room</p>
+            <p class="showcase__name" id="showName">Signature Massage Room</p>
+            <a href="#rituals" class="link">See all massages</a>
+          </div>
+          <div class="showcase__thumbs" role="tablist" aria-label="Rooms">
+            <button class="thumb is-active" role="tab" aria-selected="true" aria-label="Signature Massage Room" data-index="0" data-eyebrow="Our most loved room" data-name="Signature Massage Room">
+              <img src="assets/images/hero.webp" alt="">
+            </button>
+            <button class="thumb" role="tab" aria-selected="false" aria-label="Private Shower" data-index="1" data-eyebrow="Freshen up in private" data-name="Private Shower">
+              <img src="https://images.unsplash.com/photo-1749766878223-6ceae855b28b?auto=format&fit=crop&w=240&h=240&q=70" alt="">
+            </button>
+            <button class="thumb" role="tab" aria-selected="false" aria-label="Relaxing Bath" data-index="2" data-eyebrow="Warm water to unwind" data-name="Relaxing Bath">
+              <img src="https://images.unsplash.com/photo-1604478578618-57d582bfb230?auto=format&fit=crop&w=240&h=240&q=70" alt="">
+            </button>
+            <button class="thumb" role="tab" aria-selected="false" aria-label="Changing Lounge" data-index="3" data-eyebrow="Take your time, before and after" data-name="Changing Lounge">
+              <img src="https://images.unsplash.com/photo-1765745520336-88acf0b84fe4?auto=format&fit=crop&w=240&h=240&q=70" alt="">
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHY EVA ============ -->
+    <div class="stories">
+      <svg class="stories__art" viewBox="0 0 1440 3000" preserveAspectRatio="none" aria-hidden="true">
+        <path id="storyLine" d="M1180 -20 C 1320 260, 1420 420, 1250 620 C 1040 860, 640 760, 520 980 C 400 1200, 620 1380, 860 1460 C 1120 1550, 1260 1700, 1150 1900 C 1020 2140, 520 2080, 330 2290 C 160 2480, 260 2700, 520 2780 C 700 2840, 820 2920, 860 3010"/>
+      </svg>
+
+      <section class="story">
+        <figure class="story__media" data-reveal>
+          <img data-parallax="-0.06" src="https://images.unsplash.com/photo-1706795033849-7ca391f007c5?auto=format&fit=crop&w=1100&q=80" alt="Fresh towels and a candle laid out in a private room" loading="lazy">
+        </figure>
+        <div class="story__text">
+          <p class="kicker" data-reveal>100% Private</p>
+          <h2 class="title" data-reveal>Private Rooms, <br>Just for You</h2>
+          <p class="body" data-reveal>Every guest gets a private room with a shower, fresh towels and clean linen. Nothing is shared with anyone else.</p>
+          <p class="body" data-reveal>We get your room ready before you arrive: the right temperature, warm oils and soft lighting. All you have to do is relax.</p>
+          <a href="#rooms" class="link" data-reveal>See our rooms</a>
+        </div>
+      </section>
+
+      <section class="story story--reverse">
+        <figure class="story__media" data-reveal>
+          <img data-parallax="-0.06" src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=1100&q=80" alt="Warm stones and white flowers placed on a guest's back during a massage" loading="lazy">
+        </figure>
+        <div class="story__text">
+          <p class="kicker" data-reveal>Expert Therapists</p>
+          <h2 class="title" data-reveal>Massages from <br>Across Asia</h2>
+          <p class="body" data-reveal>Choose from Thai, Balinese, Swedish, Deep Tissue and Aromatherapy massages. Every therapist at EVA is trained and certified.</p>
+          <p class="body" data-reveal>Before we start, we ask what you need: soft or strong pressure, areas to focus on, and the oil you like best.</p>
+          <a href="#rituals" class="link" data-reveal>See all massages</a>
+        </div>
+      </section>
+
+      <section class="story" id="two">
+        <figure class="story__media" data-reveal>
+          <img data-parallax="-0.06" src="https://images.unsplash.com/photo-1720118509152-2df877673bee?auto=format&fit=crop&w=1100&q=80" alt="A candlelit bath set up for two people" loading="lazy">
+        </figure>
+        <div class="story__text">
+          <p class="kicker" data-reveal>For Couples</p>
+          <h2 class="title" data-reveal>Relax <br>Together</h2>
+          <p class="body" data-reveal>Enjoy a massage side by side in a private couples room. It is the perfect treat for a date, an anniversary or a birthday.</p>
+          <p class="body" data-reveal>Finish with a warm jacuzzi and let the evening slow down.</p>
+          <button class="link" data-reserve data-ritual="Couples Spa" data-reveal>Book for two</button>
+        </div>
+      </section>
+    </div>
+
+    <!-- ============ MASSAGE MENU ============ -->
+    <section class="rituals" id="rituals">
+      <div class="rituals__head container-narrow">
+        <p class="kicker kicker--light" data-reveal>Our Menu</p>
+        <h2 class="title title--light" data-reveal>Massages &amp; <br><em>Treatments</em></h2>
+        <p class="body body--light" data-reveal>Not sure what to choose? Just tell us how you feel, and our team will suggest the right massage for you.</p>
+      </div>
+
+      <ol class="ritual-list container">
+        <li class="ritual" data-img="https://images.unsplash.com/photo-1741522509438-a120c0bb5e88?auto=format&fit=crop&w=700&q=75" data-reveal>
+          <span class="ritual__num">01</span>
+          <img class="ritual__thumb" src="https://images.unsplash.com/photo-1741522509438-a120c0bb5e88?auto=format&fit=crop&w=360&h=450&q=70" alt="" loading="lazy">
+          <div class="ritual__main">
+            <h3 class="ritual__name">Deep Tissue Massage</h3>
+            <p class="ritual__for">Best for: back pain, stiff neck and shoulders</p>
+          </div>
+          <p class="ritual__desc">Strong, slow pressure that reaches deep into tight muscles.</p>
+          <span class="ritual__time">60 min</span>
+          <button class="ritual__cta" data-reserve data-ritual="Deep Tissue Massage" aria-label="Book Deep Tissue Massage">Book</button>
+        </li>
+        <li class="ritual" data-img="https://images.unsplash.com/photo-1639162906614-0603b0ae95fd?auto=format&fit=crop&w=700&q=75" data-reveal>
+          <span class="ritual__num">02</span>
+          <img class="ritual__thumb" src="https://images.unsplash.com/photo-1639162906614-0603b0ae95fd?auto=format&fit=crop&w=360&h=450&q=70" alt="" loading="lazy">
+          <div class="ritual__main">
+            <h3 class="ritual__name">Swedish Massage</h3>
+            <p class="ritual__for">Best for: stress, and first-time spa guests</p>
+          </div>
+          <p class="ritual__desc">Gentle, flowing strokes that relax your whole body.</p>
+          <span class="ritual__time">60 min</span>
+          <button class="ritual__cta" data-reserve data-ritual="Swedish Massage" aria-label="Book Swedish Massage">Book</button>
+        </li>
+        <li class="ritual" data-img="https://images.unsplash.com/photo-1745327883508-b6cd32e5dde5?auto=format&fit=crop&w=700&q=75" data-reveal>
+          <span class="ritual__num">03</span>
+          <img class="ritual__thumb" src="https://images.unsplash.com/photo-1745327883508-b6cd32e5dde5?auto=format&fit=crop&w=360&h=450&q=70" alt="" loading="lazy">
+          <div class="ritual__main">
+            <h3 class="ritual__name">Thai Massage</h3>
+            <p class="ritual__for">Best for: a stiff body and low energy</p>
+          </div>
+          <p class="ritual__desc">Traditional stretches and pressure points that loosen up the whole body.</p>
+          <span class="ritual__time">90 min</span>
+          <button class="ritual__cta" data-reserve data-ritual="Thai Massage" aria-label="Book Thai Massage">Book</button>
+        </li>
+        <li class="ritual" data-img="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=700&q=75" data-reveal>
+          <span class="ritual__num">04</span>
+          <img class="ritual__thumb" src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=360&h=450&q=70" alt="" loading="lazy">
+          <div class="ritual__main">
+            <h3 class="ritual__name">Aromatherapy Massage</h3>
+            <p class="ritual__for">Best for: stress and better sleep</p>
+          </div>
+          <p class="ritual__desc">A soft massage with natural essential oils chosen for you.</p>
+          <span class="ritual__time">60 min</span>
+          <button class="ritual__cta" data-reserve data-ritual="Aromatherapy Massage" aria-label="Book Aromatherapy Massage">Book</button>
+        </li>
+        <li class="ritual" data-img="https://images.unsplash.com/photo-1775133262667-316bd4d9e5b5?auto=format&fit=crop&w=700&q=75" data-reveal>
+          <span class="ritual__num">05</span>
+          <img class="ritual__thumb" src="https://images.unsplash.com/photo-1775133262667-316bd4d9e5b5?auto=format&fit=crop&w=360&h=450&q=70" alt="" loading="lazy">
+          <div class="ritual__main">
+            <h3 class="ritual__name">Balinese Massage</h3>
+            <p class="ritual__for">Best for: full-body relaxation</p>
+          </div>
+          <p class="ritual__desc">A mix of gentle stretches, pressure points and warm oil.</p>
+          <span class="ritual__time">90 min</span>
+          <button class="ritual__cta" data-reserve data-ritual="Balinese Massage" aria-label="Book Balinese Massage">Book</button>
+        </li>
+        <li class="ritual" data-img="https://images.unsplash.com/photo-1760722974657-f64bce2f9cc5?auto=format&fit=crop&w=700&q=75" data-reveal>
+          <span class="ritual__num">06</span>
+          <img class="ritual__thumb" src="https://images.unsplash.com/photo-1760722974657-f64bce2f9cc5?auto=format&fit=crop&w=360&h=450&q=70" alt="" loading="lazy">
+          <div class="ritual__main">
+            <h3 class="ritual__name">Body Scrub</h3>
+            <p class="ritual__for">Best for: dull or dry skin</p>
+          </div>
+          <p class="ritual__desc">Removes dead skin and leaves your skin soft and glowing.</p>
+          <span class="ritual__time">45 min</span>
+          <button class="ritual__cta" data-reserve data-ritual="Body Scrub" aria-label="Book Body Scrub">Book</button>
+        </li>
+        <li class="ritual" data-img="https://images.unsplash.com/photo-1720118509152-2df877673bee?auto=format&fit=crop&w=700&q=75" data-reveal>
+          <span class="ritual__num">07</span>
+          <img class="ritual__thumb" src="https://images.unsplash.com/photo-1720118509152-2df877673bee?auto=format&fit=crop&w=360&h=450&q=70" alt="" loading="lazy">
+          <div class="ritual__main">
+            <h3 class="ritual__name">Couples Spa</h3>
+            <p class="ritual__for">Best for: dates, anniversaries and birthdays</p>
+          </div>
+          <p class="ritual__desc">Two massages, side by side, in a private room for two.</p>
+          <span class="ritual__time">90 min</span>
+          <button class="ritual__cta" data-reserve data-ritual="Couples Spa" aria-label="Book Couples Spa">Book</button>
+        </li>
+        <li class="ritual" data-img="https://images.unsplash.com/photo-1604478578618-57d582bfb230?auto=format&fit=crop&w=700&q=75" data-reveal>
+          <span class="ritual__num">08</span>
+          <img class="ritual__thumb" src="https://images.unsplash.com/photo-1604478578618-57d582bfb230?auto=format&fit=crop&w=360&h=450&q=70" alt="" loading="lazy">
+          <div class="ritual__main">
+            <h3 class="ritual__name">Jacuzzi</h3>
+            <p class="ritual__for">Best for: tired muscles after a long day</p>
+          </div>
+          <p class="ritual__desc">Relax in warm, bubbling water, on its own or after your massage.</p>
+          <span class="ritual__time">60 min</span>
+          <button class="ritual__cta" data-reserve data-ritual="Jacuzzi" aria-label="Book Jacuzzi">Book</button>
+        </li>
+      </ol>
+
+      <div class="rituals__ask container" data-reveal>
+        <p>Still not sure which one is right for you?</p>
+        <a class="rituals__wa" href="https://wa.me/918884666184?text=Hello%20EVA%2C%20can%20you%20suggest%20the%20right%20massage%20for%20me%3F" target="_blank" rel="noopener">
+          <svg aria-hidden="true"><use href="#whatsapp"/></svg>
+          Ask us on WhatsApp
+        </a>
+      </div>
+      <div class="ritual-float" id="ritualFloat" aria-hidden="true"><img alt=""></div>
+    </section>
+
+    <!-- ============ QUOTE (full-bleed) ============ -->
+    <section class="breathe">
+      <div class="breathe__media">
+        <img data-parallax="0.12" src="https://images.unsplash.com/photo-1601479604588-68d9e6d386b5?auto=format&fit=crop&w=2000&q=80" alt="" loading="lazy">
+      </div>
+      <div class="breathe__content">
+        <div class="seal" aria-hidden="true">
+          <svg viewBox="0 0 120 120">
+            <defs><path id="sealPath" d="M60 60 m-46 0 a46 46 0 1 1 92 0 a46 46 0 1 1 -92 0"/></defs>
+            <text><textPath href="#sealPath">EVA · INTERNATIONAL SPA · BENGALURU · </textPath></text>
+          </svg>
+          <svg class="seal__mark"><use href="#lotus"/></svg>
+        </div>
+        <p class="breathe__quote" data-reveal>Leave your stress<br><em>at the door.</em></p>
+      </div>
+    </section>
+
+    <!-- ============ REVIEWS ============ -->
+    <section class="voices" id="reviews">
+      <div class="container-narrow">
+        <p class="kicker" data-reveal>What Our Guests Say</p>
+        <div class="voices__rating" data-reveal>
+          <span class="voices__score">4.9</span>
+          <span class="voices__stars" aria-label="4.9 out of 5">★★★★★</span>
+          <span class="voices__src">Google rating</span>
+        </div>
+        <!-- Replace with real, current Google reviews (with the guest's permission) before launch. -->
+        <div class="voices__track" data-reveal>
+          <blockquote class="voice is-active">
+            <p>“Amazing experience. Professional service and a very clean place.”</p>
+            <cite>Priya M. <span>· Thai Massage</span></cite>
+          </blockquote>
+          <blockquote class="voice">
+            <p>“Best spa in Koramangala. Highly recommend the couples package.”</p>
+            <cite>Rahul S. <span>· Couples Spa</span></cite>
+          </blockquote>
+          <blockquote class="voice">
+            <p>“Great value. The deep tissue massage really helped my back pain.”</p>
+            <cite>Sneha K. <span>· Deep Tissue Massage</span></cite>
+          </blockquote>
+        </div>
+        <div class="voices__dots" role="tablist" aria-label="Reviews">
+          <button class="is-active" aria-label="Review 1"></button>
+          <button aria-label="Review 2"></button>
+          <button aria-label="Review 3"></button>
+        </div>
+        <a class="link voices__more" href="https://www.google.com/maps/search/?api=1&query=Eva+International+Spa+Koramangala+Bengaluru" target="_blank" rel="noopener" data-reveal>Read all reviews on Google</a>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="visit" id="visit">
+      <div class="visit__grid container">
+        <figure class="visit__media" data-reveal>
+          <img data-parallax="-0.05" src="https://images.unsplash.com/photo-1648065611455-6774225ef654?auto=format&fit=crop&w=1100&q=80" alt="White orchids against a dark background" loading="lazy">
+        </figure>
+        <div class="visit__text">
+          <p class="kicker" data-reveal>Contact Us</p>
+          <h2 class="title" data-reveal>How to <br>Find Us</h2>
+          <dl class="visit__info" data-reveal>
+            <div>
+              <dt>Address</dt>
+              <dd data-bind="address">3rd Floor, 20th Main Road, above Van Heusen, <br>KHB Colony, 7th Block, Koramangala, <br>Bengaluru, Karnataka 560095</dd>
+            </div>
+            <div>
+              <dt>Opening hours</dt>
+              <dd>Every day, 9 AM — 10 PM</dd>
+            </div>
+            <div>
+              <dt>Phone &amp; WhatsApp</dt>
+              <dd><a href="tel:+918884666184">+91 88846 66184</a></dd>
+            </div>
+            <div>
+              <dt>Email</dt>
+              <dd><a href="mailto:info@evainternationalspa.com">info@evainternationalspa.com</a></dd>
+            </div>
+          </dl>
+          <div class="visit__actions" data-reveal>
+            <button class="btn btn--solid" data-reserve>Book Now</button>
+            <a class="link" href="https://www.google.com/maps/search/?api=1&query=Eva+International+Spa+Koramangala+Bengaluru" target="_blank" rel="noopener">Get directions</a>
+            <a class="link" href="https://wa.me/918884666184?text=Hello%20EVA%2C%20I%20have%20a%20question." target="_blank" rel="noopener">WhatsApp us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <svg class="footer__art" aria-hidden="true"><use href="#lotus"/></svg>
+    <div class="footer__grid container">
+      <div class="footer__brand">
+        <svg class="footer__mark"><use href="#lotus"/></svg>
+        <span class="footer__word">EVA</span>
+        <span class="footer__sub">International Spa</span>
+      </div>
+      <div class="footer__cta">
+        <p class="footer__lead">Ready to relax?</p>
+        <p class="footer__note">Book your visit in under a minute.</p>
+        <div class="footer__cta-row">
+          <button class="btn btn--light footer__book" data-reserve>Book Now</button>
+          <a class="footer__ghost" href="tel:+918884666184"><svg aria-hidden="true"><use href="#phone"/></svg>Call</a>
+          <a class="footer__ghost" href="https://wa.me/918884666184?text=Hello%20EVA%2C%20I%20would%20like%20to%20book%20a%20massage." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#whatsapp"/></svg>WhatsApp</a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <p class="footer__head">Massages</p>
+        <a href="#rituals">Deep Tissue</a>
+        <a href="#rituals">Thai</a>
+        <a href="#rituals">Balinese</a>
+        <a href="#two">Couples Spa</a>
+      </div>
+      <div class="footer__col">
+        <p class="footer__head">Visit</p>
+        <p>Koramangala, Bengaluru</p>
+        <p>Every day, 9 AM — 10 PM</p>
+        <a href="https://www.google.com/maps/search/?api=1&query=Eva+International+Spa+Koramangala+Bengaluru" target="_blank" rel="noopener">Get directions</a>
+      </div>
+      <div class="footer__col">
+        <p class="footer__head">Legal</p>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Refund Policy</a>
+      </div>
+    </div>
+    <div class="footer__base container">
+      <p>© <span id="year">2026</span> EVA International Spa. All rights reserved.</p>
+      <a class="credit__pill" href="https://wa.me/918095762180?text=Hi%20svayam.ai%2C%20I%20saw%20the%20EVA%20International%20Spa%20website%20and%20I%20would%20love%20a%20website%20like%20this%20for%20my%20business." target="_blank" rel="noopener" aria-label="Website crafted by svayam.ai. Get a website like this on WhatsApp, +91 80957 62180">
+        <span class="credit__dot" aria-hidden="true"></span>
+        <span class="credit__by">Website crafted by</span>
+        <span class="credit__name">svayam.ai</span>
+        <span class="credit__go" aria-hidden="true">
+          <svg><use href="#whatsapp"/></svg>
+          <span class="credit__go-text">Get a website like this</span>
+          <svg class="credit__arrow" viewBox="0 0 24 24"><path d="M4 12h15M14 7l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+        </span>
+      </a>
+      <p>Strictly professional services by certified therapists.</p>
+    </div>
+  </footer>
+
+  <!-- ============ FLOATING UI ============ -->
+  <button class="float-reserve" id="floatReserve" data-reserve>Book Now</button>
+  <a class="float-wa" id="floatWa" href="https://wa.me/918884666184?text=Hello%20EVA%2C%20I%20would%20like%20to%20book%20a%20massage." target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+    <svg aria-hidden="true"><use href="#whatsapp"/></svg>
+  </a>
+  <nav class="dock" id="dock" aria-label="Quick actions">
+    <a class="dock__btn" href="tel:+918884666184"><svg aria-hidden="true"><use href="#phone"/></svg><span>Call</span></a>
+    <a class="dock__btn" href="https://wa.me/918884666184?text=Hello%20EVA%2C%20I%20would%20like%20to%20book%20a%20massage." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#whatsapp"/></svg><span>WhatsApp</span></a>
+    <button class="dock__main" data-reserve>Book Now</button>
+  </nav>
+  <button class="to-top" id="toTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24"><path d="M6 14l6-6 6 6" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+  </button>
+
+  <!-- ============ BOOKING PANEL ============ -->
+  <div class="reserve" id="reserve" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="reserveTitle">
+    <div class="reserve__backdrop" data-close></div>
+    <div class="reserve__panel">
+      <div class="reserve__grab" aria-hidden="true"><span></span></div>
+      <button class="reserve__close" data-close aria-label="Close">
+        <svg viewBox="0 0 24 24"><path d="M5 5l14 14M19 5L5 19" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
+      </button>
+      <p class="kicker">Book a Visit</p>
+      <h2 class="title" id="reserveTitle">Book Your <br><em>Massage</em></h2>
+      <ol class="reserve__steps">
+        <li>Fill in the details below.</li>
+        <li>Tap the button. WhatsApp opens with your message ready.</li>
+        <li>Press send. We confirm your time within minutes.</li>
+      </ol>
+      <form class="reserve__form" id="reserveForm" autocomplete="on">
+        <label class="field">
+          <span>Massage</span>
+          <select name="ritual" required>
+            <option value="" selected disabled>Choose a massage</option>
+            <option>Deep Tissue Massage</option>
+            <option>Swedish Massage</option>
+            <option>Thai Massage</option>
+            <option>Aromatherapy Massage</option>
+            <option>Balinese Massage</option>
+            <option>Body Scrub</option>
+            <option>Couples Spa</option>
+            <option>Jacuzzi</option>
+            <option>Not sure, please suggest</option>
+          </select>
+        </label>
+        <div class="field-row">
+          <label class="field">
+            <span>Date</span>
+            <input type="date" name="date" required>
+          </label>
+          <label class="field">
+            <span>Time</span>
+            <select name="time" required>
+              <option value="" selected disabled>Choose a time</option>
+              <option>Morning (9 AM — 12 PM)</option>
+              <option>Afternoon (12 — 4 PM)</option>
+              <option>Evening (4 — 7 PM)</option>
+              <option>Night (7 — 10 PM)</option>
+            </select>
+          </label>
+        </div>
+        <div class="field-row">
+          <label class="field">
+            <span>Number of people</span>
+            <select name="guests">
+              <option>1 person</option>
+              <option>2 people</option>
+            </select>
+          </label>
+          <label class="field">
+            <span>Your name</span>
+            <input type="text" name="name" placeholder="Your full name" required>
+          </label>
+        </div>
+        <button class="btn btn--solid btn--block reserve__submit" type="submit">
+          <svg aria-hidden="true"><use href="#whatsapp"/></svg>
+          Send Booking on WhatsApp
+        </button>
+        <a class="reserve__call" href="tel:+918884666184">Prefer to talk? Call us on +91 88846 66184</a>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+  <script type="module" src="js/content.js"></script>
+</body>
+</html>

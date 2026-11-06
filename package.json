@@ -1,0 +1,10 @@
+{
+  "name": "eva-international-spa",
+  "version": "1.0.0",
+  "private": true,
+  "description": "EVA International Spa website (static HTML, CSS and JS)",
+  "scripts": {
+    "dev": "python3 -m http.server 4000",
+    "start": "python3 -m http.server 4000"
+  }
+}
