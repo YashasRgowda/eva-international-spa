@@ -65,7 +65,7 @@ const WHY_PARTS = [
   { key: "therapists", name: "Expert Therapists", hint: "Shown next to “Massages from Across Asia”" },
   { key: "couples", name: "For Couples", hint: "Shown next to “Relax Together”" },
 ];
-const DURATIONS = ["30 min", "45 min", "60 min", "75 min", "90 min", "120 min"];
+const DURATIONS = ["30 min", "45 min", "60 min", "75 min", "90 min", "120 min", "Per package"];
 
 let state = clone(DEFAULTS);
 let currentPage = "home";
@@ -516,7 +516,7 @@ function massageForm(index) {
       </label>
       <label class="field">
         <span class="field__label">Short description</span>
-        <textarea name="description" maxlength="140" rows="3" placeholder="One or two short lines">${esc(it.description)}</textarea>
+        <textarea name="description" maxlength="200" rows="4" placeholder="Two short lines">${esc(it.description)}</textarea>
       </label>
       <label class="field">
         <span class="field__label">Time</span>

@@ -171,10 +171,11 @@
 
   /* ---------- Reveal on scroll ---------- */
   // Stagger siblings that reveal together.
-  $$(".world__head, .story__text, .rituals__head, .visit__text, .voices .container-narrow").forEach((group) => {
+  $$(".world__head, .stories__head, .story__text, .rituals__head, .breathe__content, .visit__text, .voices .container-narrow, .areas__head, .areas__foot, .faq__head").forEach((group) => {
     $$("[data-reveal]", group).forEach((el, i) => el.style.setProperty("--d", `${i * 0.09}s`));
   });
   $$(".ritual").forEach((el, i) => el.style.setProperty("--d", `${(i % 4) * 0.06}s`));
+  $$(".faq__item").forEach((el, i) => el.style.setProperty("--d", `${(i % 4) * 0.06}s`));
 
   const io = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {

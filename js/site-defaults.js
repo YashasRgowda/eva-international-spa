@@ -12,8 +12,8 @@ export const DEFAULTS = {
 
   hero: {
     image: unsplash("1761470575018-135c213340eb"),
-    title: "Relax. Unwind. Feel New.",
-    lead: "Professional massages by certified therapists, in private rooms made just for you.",
+    title: "Experience Luxury. Relax. Rejuvenate.",
+    lead: "Relaxing massage therapies, luxury wellness treatments and a peaceful environment designed to help you unwind from everyday stress.",
   },
 
   // Room names stay fixed; only the photos change.
@@ -34,14 +34,14 @@ export const DEFAULTS = {
 
   services: {
     items: [
-      { name: "Deep Tissue Massage", bestFor: "back pain, stiff neck and shoulders", description: "Strong, slow pressure that reaches deep into tight muscles.", duration: "60 min", image: unsplash("1741522509438-a120c0bb5e88"), hidden: false },
-      { name: "Swedish Massage", bestFor: "stress, and first-time spa guests", description: "Gentle, flowing strokes that relax your whole body.", duration: "60 min", image: unsplash("1639162906614-0603b0ae95fd"), hidden: false },
-      { name: "Thai Massage", bestFor: "a stiff body and low energy", description: "Traditional stretches and pressure points that loosen up the whole body.", duration: "90 min", image: unsplash("1745327883508-b6cd32e5dde5"), hidden: false },
-      { name: "Aromatherapy Massage", bestFor: "stress and better sleep", description: "A soft massage with natural essential oils chosen for you.", duration: "60 min", image: unsplash("1515377905703-c4788e51af15"), hidden: false },
-      { name: "Balinese Massage", bestFor: "full-body relaxation", description: "A mix of gentle stretches, pressure points and warm oil.", duration: "90 min", image: unsplash("1775133262667-316bd4d9e5b5"), hidden: false },
-      { name: "Body Scrub", bestFor: "dull or dry skin", description: "Removes dead skin and leaves your skin soft and glowing.", duration: "45 min", image: unsplash("1760722974657-f64bce2f9cc5"), hidden: false },
-      { name: "Couples Spa", bestFor: "dates, anniversaries and birthdays", description: "Two massages, side by side, in a private room for two.", duration: "90 min", image: unsplash("1720118509152-2df877673bee"), hidden: false },
-      { name: "Jacuzzi", bestFor: "tired muscles after a long day", description: "Relax in warm, bubbling water, on its own or after your massage.", duration: "60 min", image: unsplash("1604478578618-57d582bfb230"), hidden: false },
+      { name: "Deep Tissue Massage", bestFor: "back pain, stiff neck and shoulders", description: "Focused, slow-pressure techniques that target deeper muscle tension. Ideal for muscle tightness after long working hours or physical activity.", duration: "60 min", image: unsplash("1741522509438-a120c0bb5e88"), hidden: false },
+      { name: "Swedish Massage", bestFor: "stress relief and first-time spa guests", description: "Gentle, flowing strokes designed to relax your entire body. A classic full-body massage for those looking to unwind and refresh.", duration: "60 min", image: unsplash("1639162906614-0603b0ae95fd"), hidden: false },
+      { name: "Thai Massage", bestFor: "body stiffness and low energy", description: "Traditional Thai techniques with assisted stretching and pressure-point movements that release stiffness and improve flexibility.", duration: "90 min", image: unsplash("1745327883508-b6cd32e5dde5"), hidden: false },
+      { name: "Aromatherapy Massage", bestFor: "stress and better sleep", description: "A soothing massage with aromatic essential oils. Gentle movements create a calming experience for your body and mind.", duration: "60 min", image: unsplash("1515377905703-c4788e51af15"), hidden: false },
+      { name: "Balinese Massage", bestFor: "complete body relaxation", description: "Inspired by traditional Indonesian techniques, combining gentle stretching, pressure points and warm oil for a relaxing full-body experience.", duration: "90 min", image: unsplash("1775133262667-316bd4d9e5b5"), hidden: false },
+      { name: "Body Scrub", bestFor: "dull or dry skin", description: "A body exfoliation treatment that removes dead skin cells, leaving your skin feeling softer, smoother and renewed.", duration: "45 min", image: unsplash("1760722974657-f64bce2f9cc5"), hidden: false },
+      { name: "Couples Spa", bestFor: "dates, anniversaries and special occasions", description: "A special wellness experience together: two massages, side by side, in a private room designed for couples to relax and unwind.", duration: "90 min", image: unsplash("1720118509152-2df877673bee"), hidden: false },
+      { name: "Jacuzzi", bestFor: "relaxation after a long day", description: "Warm, bubbling water in a relaxing Jacuzzi setting. Enjoy it as a standalone experience or add it to your massage session.", duration: "Per package", image: unsplash("1604478578618-57d582bfb230"), hidden: false },
     ],
   },
 
