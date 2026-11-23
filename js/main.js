@@ -26,21 +26,24 @@
     requestAnimationFrame(raf);
   }
 
+  // Sections stop just below the fixed header, so their top is never hidden behind it.
   const scrollToTarget = (target) => {
-    if (lenis) lenis.scrollTo(target, { offset: 0, duration: 1.6 });
-    else (typeof target === "number" ? window.scrollTo({ top: target, behavior: "smooth" }) : target.scrollIntoView({ behavior: "smooth" }));
+    const offset = typeof target === "number" ? 0 : -$("#header").offsetHeight;
+    if (lenis) lenis.scrollTo(target, { offset, duration: 1.6 });
+    else window.scrollTo({ top: typeof target === "number" ? target : target.getBoundingClientRect().top + window.scrollY + offset, behavior: "smooth" });
   };
 
-  $$('a[href^="#"]').forEach((a) => {
-    a.addEventListener("click", (e) => {
-      const id = a.getAttribute("href");
-      if (id === "#") return;
-      const el = id === "#top" ? 0 : $(id);
-      if (el === null) return;
-      e.preventDefault();
-      closeMenu();
-      scrollToTarget(el);
-    });
+  // Delegated, so links rebuilt from saved content (like the footer massages) scroll smoothly too.
+  document.addEventListener("click", (e) => {
+    const a = e.target.closest('a[href^="#"]');
+    if (!a) return;
+    const id = a.getAttribute("href");
+    if (id === "#") return;
+    const el = id === "#top" ? 0 : $(id);
+    if (el === null) return;
+    e.preventDefault();
+    closeMenu();
+    scrollToTarget(el);
   });
 
   /* ---------- Opening curtain + hero intro ---------- */
@@ -407,8 +410,13 @@
   };
 
   const sendToWhatsApp = (lines) => {
-    const text = encodeURIComponent(lines.filter(Boolean).join("\n"));
-    window.open(`https://wa.me/${window.EVA_WHATSAPP || WHATSAPP_NUMBER}?text=${text}`, "_blank", "noopener");
+    // Blank strings are kept on purpose: they are the empty line after the greeting.
+    const text = encodeURIComponent(lines.filter((l) => l != null).join("\n"));
+    const url = `https://wa.me/${window.EVA_WHATSAPP || WHATSAPP_NUMBER}?text=${text}`;
+    // In-app browsers (Instagram, Facebook) often block new windows; open WhatsApp in this tab instead.
+    const win = window.open(url, "_blank");
+    if (win) win.opener = null;
+    else window.location.href = url;
   };
 
   reserveForm.addEventListener("submit", (e) => {

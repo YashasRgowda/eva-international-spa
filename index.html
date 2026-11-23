@@ -13,6 +13,9 @@
   <title>EVA International Spa — Luxury Spa &amp; Massage Centre in Koramangala, Bengaluru</title>
   <meta name="description" content="Luxury spa and massage centre in Koramangala 7th Block, Bengaluru. Deep Tissue, Swedish, Thai, Aromatherapy and Balinese massages, Couples Spa and Jacuzzi. Book by call or WhatsApp.">
   <meta name="theme-color" content="#1d1612">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="canonical" href="https://evainternationalspa.com/">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://evainternationalspa.com/">
@@ -152,7 +155,7 @@
 
   <!-- ============ MENU OVERLAY ============ -->
   <div class="menu" id="menu" aria-hidden="true">
-    <div class="menu__inner">
+    <div class="menu__inner" data-lenis-prevent>
       <div class="menu__top">
         <button class="menu-toggle menu-toggle--close" id="menuClose" aria-label="Close menu">
           <span class="menu-toggle__icon"><i></i><i></i></span>
@@ -728,7 +731,7 @@
   <!-- ============ BOOKING PANEL ============ -->
   <div class="reserve" id="reserve" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="reserveTitle">
     <div class="reserve__backdrop" data-close></div>
-    <div class="reserve__panel">
+    <div class="reserve__panel" data-lenis-prevent>
       <div class="reserve__grab" aria-hidden="true"><span></span></div>
       <button class="reserve__close" data-close aria-label="Close">
         <svg viewBox="0 0 24 24"><path d="M5 5l14 14M19 5L5 19" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>

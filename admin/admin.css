@@ -403,7 +403,7 @@ svg { flex-shrink: 0; }
   .act { flex: 1 1 calc(50% - 8px); justify-content: center; }
   .review-item .act { flex: 1 1 calc(50% - 8px); }
   .modal { padding: 0; place-items: end stretch; }
-  .modal__panel { width: 100%; max-height: 92svh; border-radius: 16px 16px 0 0; padding: 26px 20px calc(24px + env(safe-area-inset-bottom)); transform: translateY(100%); }
+  .modal__panel { width: 100%; max-height: 92vh; max-height: 92svh; border-radius: 16px 16px 0 0; padding: 26px 20px calc(24px + env(safe-area-inset-bottom)); transform: translateY(100%); }
   .modal.is-open .modal__panel { transform: none; }
   .modal__actions { flex-direction: column-reverse; }
   .savebar.is-visible ~ .toast { bottom: 140px; }
